@@ -83,3 +83,28 @@ tablaMultiplicar(number)
     }
  }
 calculadora()
+
+function generarContraseña(longitud, mayusculas, minusculas, numeros, especiales) {
+    const caracteresMayusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const caracteresMinusculas = 'abcdefghijklmnopqrstuvwxyz';
+    const caracteresNumericos = '0123456789';
+    const caracteresEspeciales = '!@#$%^&*()_-+=[]{}|;:,.<>/?';
+  
+    let caracteresPosibles = '';
+    if (mayusculas) caracteresPosibles += caracteresMayusculas;
+    if (minusculas) caracteresPosibles += caracteresMinusculas;
+    if (numeros) caracteresPosibles += caracteresNumericos;
+    if (especiales) caracteresPosibles += caracteresEspeciales;
+  
+    let contraseña = '';
+    for (let i = 0; i < longitud; i++) {
+      const indiceAleatorio = Math.floor(Math.random() * caracteresPosibles.length);
+      contraseña += caracteresPosibles.charAt(indiceAleatorio);
+    }
+  
+    return contraseña;
+  }
+  
+  // Ejemplo de uso:
+  const contraseña = generarContraseña(12, true, true, true, true);
+  console.log(contraseña);
