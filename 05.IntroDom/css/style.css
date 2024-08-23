@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#opciones-jugador{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.opcion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background-color: #61c364;
+    color:white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 12px;
+    transition: background-color 0.5s ease-in-out
+}
+
+.opcion:hover{
+    background-color: #2d8232;
+}
+
+.resultado{
+    background-color: #dfd9d9;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out
+}
+
+.resultado:hover{
+    background-color: #b9b6b6;
+}
+
+.mensaje{
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
