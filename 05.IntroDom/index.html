@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ESTILOS CSS -->
+     <link rel="stylesheet" href="css/style.css">
+    <title>Piedra Papel Tijera</title>
+</head>
+<body>
+
+    <h1> Piedra, Papel o Tijera 🕹️</h1>    
+
+    <div class="opciones-jugador" id="opciones-jugador">
+        <h2> Elige una opción: </h2>
+        <!-- data-opcion="" agregar un identificador único a cada botón-->
+        <button class="opcion" data-opcion="piedra">Piedra 🪨</button>
+        <button class="opcion" data-opcion="papel">Papel 📰</button>
+        <button class="opcion" data-opcion="tijera">Tijera ✂️</button>
+    </div>
+
+        <div class="resultado">
+            <h3>Resultado: </h3>
+            <p class="mensaje" id="mensaje"></p>
+        </div>
+
+    <!-- Vinculamos nuestro javascript -->
+     <script src="main.js"></script>
+</body>
+</html>
