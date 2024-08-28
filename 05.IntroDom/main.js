@@ -35,11 +35,12 @@
 
   // Agregar un evento AddEventListener 
   // recorrer el arreglo o la lista llamada opciones
-
   for(let i = 0; i <= opcionJugador.length; i++){
     const opcion = opcionJugador[i]
     const valor = opcion // capturar el valor de opción 
     opcion.addEventListener('click',
+      // funcion anonima que ejecuta a la funcion:  
+      // ? function jugar(opcionSeleccionada)
       function (){
         const opcionSeleccionada = valor.dataset.opcion
         jugar(opcionSeleccionada)
