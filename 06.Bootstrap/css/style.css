@@ -1,0 +1,10 @@
+/*
+creamos nuestros propios estilos y los aplicamos a los elementos de bootstrap
+*/
+.navbar a{
+    color: white;
+}
+
+.collapse .nav-link{
+    color: white;
+}
